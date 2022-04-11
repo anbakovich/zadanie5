@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+// C=(M!+N!)/(M+1)!
+
+let m = prompt("Введите число M:");
+let n = prompt("Введите число N:");
+
+let d = Number(m + 1);
+
+function factorial(m) {
+    return (m != 1) ? m * factorial(m-1) : 1;
+}
+function factorial(n) {
+    return (n != 1) ? n * factorial(n-1) : 1;
+}
+function factorial(d) {
+    return (d != 1) ? d * factorial(d-1) : 1;
+}
+let c = (m + n) / d;
+
+alert(c);
+console.log(c);
+
+</script>
+</body>
+</html>
